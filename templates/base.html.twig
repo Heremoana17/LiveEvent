@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang='fr'>
 	<head>
 		<meta charset="UTF-8">
 		<title>
-			{% block title %}Welcome!
+			{% block title %}live evnet
 			{% endblock %}
 		</title>
 		<link rel="icon" href="{{asset("img/Logo.jpg")}}">
@@ -26,7 +26,7 @@
 					<a class="nav-link link-light px-2 dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Mon blog</a>
 					<ul class="dropdown-menu" aria-labelledby="dropdownAdminLink">
 						<li>
-							<a class="dropdown-item" href="">Tableau de bord</a>
+							<a class="dropdown-item" href="{{path('admin')}}">Tableau de bord</a>
 						</li>
 						<li>
 							<a class="dropdown-item" href="">Menus</a>

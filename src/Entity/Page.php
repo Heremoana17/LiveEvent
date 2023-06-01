@@ -3,13 +3,14 @@
 namespace App\Entity;
 
 use ApiPlatform\Metadata\ApiResource;
+use App\Model\TimestampedInterface;
 use App\Repository\PageRepository;
 use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
 
 #[ORM\Entity(repositoryClass: PageRepository::class)]
 #[ApiResource]
-class Page
+class Page implements TimestampedInterface
 {
     #[ORM\Id]
     #[ORM\GeneratedValue]
